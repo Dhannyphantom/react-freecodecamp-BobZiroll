@@ -4,81 +4,91 @@
 
 body {
   margin: 0;
-  background-color: #21222a;
-  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+.nav {
+  height: 80px;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 12px #ccc;
+  padding: 0px 12px;
 }
 
-.container {
-  background-color: #0e0f16;
-  border-radius: 8px;
-  width: 270px;
-  overflow: hidden;
-  margin: 40px 0px;
+.nav-logo {
+  width: 100px;
+  max-width: 120px;
 }
 
-.pic {
-  width: 100%;
-}
-
-.info {
+.hero {
+  padding: 30px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+}
+
+.hero > img {
+  margin-top: 20px;
+  max-width: 600px;
+  align-self: center;
+}
+
+.hero > h2 {
+  margin-bottom: 16px;
+}
+.hero > p {
+  width: 400px;
+  margin-top: 0;
+  font-size: 14px;
+}
+
+.card-container {
+  padding: 40px;
+  width: 280px;
+}
+
+.card-rating {
+  display: flex;
+  flex-direction: row;
   align-items: center;
 }
 
-.info > h3 {
+.card-rating > small,
+.card-rating > p,
+.card-price {
   margin: 0;
-  margin-top: 10px;
-  color: #fff;
 }
 
-.info > p {
-  margin: 2px 0px 5px 0px;
-  font-size: 12px;
-  color: #bbbbbeee;
-}
-
-.info > small {
-  margin: 0;
+.card-rating > span {
   font-size: 10px;
-  color: #8164f7ee;
+  margin: 0px 2px;
 }
 
-.buttons {
-  display: flex;
-  margin-top: 10px;
-  justify-content: space-around;
-}
-
-.btn {
-  padding: 8px 30px;
-  border-radius: 6px;
+.card-container > p {
   font-size: 12px;
-  border-width: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
-.btn-linkedIn {
-  background-color: #8164f7ee;
-  color: #fff;
+.card-container > p > small {
+  font-weight: 700;
 }
 
-.btn-email {
-  background-color: #ebebedee;
-  color: #000;
+.card-review {
+  margin: 5px 0px;
 }
 
-.detail {
-  padding: 5px 25px;
+.card-image-container > p {
+  position: absolute;
+  margin: 10px;
+  padding: 5px;
+  font-size: 8px;
+  border-radius: 3px;
+  background-color: #ccc;
 }
 
-.detail > h4 {
-  color: #fff;
-}
-
-.detail > p {
-  font-size: 12px;
-  color: #e2dfdf;
+.card-image {
+  width: 200px;
+  height: 260px;
+  border-radius: 10px;
 }

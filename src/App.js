@@ -1,18 +1,14 @@
 import "./App.css";
-import AboutDetail from "./components/AboutDetail";
-import Button from "./components/Button";
-import Info from "./components/Info";
-import InterestDetail from "./components/InterestDetail";
-import ProfilePic from "./components/ProfilePic";
+import Card from "./components/Card";
+// import Hero from "./components/Hero";
+import NavBar from "./components/NavBar";
 
 function App() {
   return (
     <div className="container">
-      <ProfilePic />
-      <Info />
-      <Button />
-      <AboutDetail />
-      <InterestDetail />
+      <NavBar />
+      {/* <Hero /> */}
+      <Card />
     </div>
   );
 }
