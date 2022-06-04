@@ -1,12 +1,18 @@
 import "./App.css";
-import Main from "./components/Main";
-import NavBar from "./components/NavBar";
+import AboutDetail from "./components/AboutDetail";
+import Button from "./components/Button";
+import Info from "./components/Info";
+import InterestDetail from "./components/InterestDetail";
+import ProfilePic from "./components/ProfilePic";
 
 function App() {
   return (
-    <div className="App">
-      <NavBar />
-      <Main />
+    <div className="container">
+      <ProfilePic />
+      <Info />
+      <Button />
+      <AboutDetail />
+      <InterestDetail />
     </div>
   );
 }
