@@ -1,22 +1,42 @@
 import "./App.css";
 
-function NavBar() {
+function MainContent() {
   return (
-    <nav>
-      <h1>TechLab</h1>
-      <ul>
+    <>
+      <ol>
         <li>Pricing</li>
         <li>About</li>
         <li>Contact</li>
-      </ul>
-    </nav>
+      </ol>
+    </>
+  );
+}
+
+function Header() {
+  return (
+    <header>
+      <nav>
+        <img src="./logo512.png" width="60px" alt="" />
+        <h1>Excited About React!</h1>
+      </nav>
+    </header>
+  );
+}
+
+function Footer() {
+  return (
+    <footer>
+      <small>"@REACT page 2022"</small>
+    </footer>
   );
 }
 
 function App() {
   return (
     <div className="App">
-      <NavBar />
+      <Header />
+      <MainContent />
+      <Footer />
     </div>
   );
 }
