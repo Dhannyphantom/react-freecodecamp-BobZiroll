@@ -5,13 +5,14 @@
 body {
   margin: 0;
   font-family: "Inter", sans-serif;
+  background-color: #282d35;
 }
 
 .nav {
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: #171c27;
+  background-color: #21222a;
   height: 90px;
   padding: 30px 25px;
 }
@@ -29,4 +30,20 @@ body {
 
 .nav-logo {
   width: 50px;
+}
+
+.main {
+  padding: 50px 27px;
+}
+
+.main > h1 {
+  color: white;
+  font-weight: 600;
+  font-size: 39px;
+  letter-spacing: -0.05em;
+}
+
+.main > ul > li {
+  color: whitesmoke;
+  padding-block: 10px;
 }
