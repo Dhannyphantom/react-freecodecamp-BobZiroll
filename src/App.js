@@ -17,8 +17,8 @@ function MainContent() {
 function Header() {
   return (
     <header>
-      <nav className="navHeader">
-        <img src="./logo512.png" width="60px" alt="" />
+      <nav className="nav">
+        <img src="./logo512.png" className="nav-logo" alt="" />
         <ul className="listHeader">
           <li>Pricing</li>
           <li>About</li>
@@ -31,7 +31,7 @@ function Header() {
 
 function Footer() {
   return (
-    <footer>
+    <footer className="footer">
       <small>"@REACT page 2022"</small>
     </footer>
   );
