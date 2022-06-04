@@ -3,6 +3,8 @@ import "./App.css";
 function MainContent() {
   return (
     <>
+      <h1>Excited About React!</h1>
+
       <ol>
         <li>Pricing</li>
         <li>About</li>
@@ -15,9 +17,13 @@ function MainContent() {
 function Header() {
   return (
     <header>
-      <nav>
+      <nav className="navHeader">
         <img src="./logo512.png" width="60px" alt="" />
-        <h1>Excited About React!</h1>
+        <ul className="listHeader">
+          <li>Pricing</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
       </nav>
     </header>
   );
