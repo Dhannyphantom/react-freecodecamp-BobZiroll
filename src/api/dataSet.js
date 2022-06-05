@@ -12,7 +12,6 @@ const sets = {
         reviewCount: 30,
       },
       location: "Online",
-      sold: false,
       openSpots: 27,
     },
     {
@@ -26,7 +25,6 @@ const sets = {
         reviewCount: 6,
       },
       location: "Online",
-      sold: true,
       openSpots: 0,
     },
     {
@@ -41,7 +39,6 @@ const sets = {
         reviewCount: 31,
       },
       location: "Offline",
-      sold: true,
       openSpots: 2,
     },
     {
@@ -56,8 +53,6 @@ const sets = {
         reviewCount: 12,
       },
       location: "Online",
-      sold: false,
-
       openSpots: 2,
     },
   ],

@@ -13,7 +13,7 @@ export default function Card({
   return (
     <div className="card-container">
       <div className="card-image-container">
-        <p>{sold ? "SOLD OUT" : "AVAILABLE"}</p>
+        {/* <p>{sold ? "SOLD OUT" : "AVAILABLE"}</p> */}
         <img src={img} alt="" className="card-image" />
       </div>
       <div className="card-rating">
