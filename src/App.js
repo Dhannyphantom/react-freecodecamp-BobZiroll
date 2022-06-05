@@ -1,6 +1,6 @@
 import "./App.css";
 import Card from "./components/Card";
-// import Hero from "./components/Hero";
+import Hero from "./components/Hero";
 import NavBar from "./components/NavBar";
 import dataSet from "./api/dataSet";
 
@@ -14,6 +14,7 @@ function App() {
   return (
     <div className="container">
       <NavBar />
+      <Hero />
       <section className="card-list">{cardElements}</section>
     </div>
   );
