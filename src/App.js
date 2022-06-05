@@ -6,10 +6,11 @@ import dataSet from "./api/dataSet";
 const { projectTwo } = dataSet;
 
 function App() {
+  const detailElements = projectTwo.map((item) => <Detail item={item} />);
   return (
     <div className="container">
       <NavBar />
-      <Detail item={projectTwo[0]} />
+      <section>{detailElements}</section>
     </div>
   );
 }

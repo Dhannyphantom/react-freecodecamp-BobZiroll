@@ -50,16 +50,20 @@ body {
 
 .info-description {
   font-size: 11px;
-  width: 500px;
+  width: 350px;
 }
 
 .detail {
   display: flex;
+  padding: 30px;
   flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .detail > img {
   width: 200px;
+  height: 250px;
   border-radius: 8px;
 }
 
