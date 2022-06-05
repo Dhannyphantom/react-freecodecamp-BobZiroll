@@ -2,22 +2,30 @@ import "./App.css";
 import Card from "./components/Card";
 // import Hero from "./components/Hero";
 import NavBar from "./components/NavBar";
-import cardImage from "./assets/sasuke.jpg";
+import dataSet from "./api/dataSet";
+
+const { cardDetail } = dataSet;
 
 function App() {
+  const cardElements = cardDetail.map((obj) => {
+    return (
+      <Card
+        img={obj.coverImg}
+        rating={obj.stats.rating}
+        reviewCount={obj.stats.reviewCount}
+        country={obj.location}
+        sold={obj.sold}
+        key={obj.id.toString()}
+        title={obj.title}
+        price={obj.price}
+      />
+    );
+  });
+
   return (
     <div className="container">
       <NavBar />
-      {/* <Hero /> */}
-      <Card
-        img={cardImage}
-        rating={5.0}
-        reviewCount={11}
-        country="USA"
-        sold={false}
-        title="Life lessons with Sasuke Uchiha"
-        price={140}
-      />
+      {cardElements}
     </div>
   );
 }
