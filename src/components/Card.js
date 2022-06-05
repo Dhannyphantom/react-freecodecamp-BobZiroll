@@ -1,15 +1,8 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
 
-export default function Card({
-  img,
-  rating,
-  reviewCount,
-  openSpots,
-  title,
-  location,
-  price,
-}) {
+export default function Card({ item }) {
+  const { coverImg: img, stats, openSpots, title, location, price } = item;
   let badgeText = null;
   if (openSpots === 0) {
     badgeText = "SOLD OUT";
@@ -30,8 +23,8 @@ export default function Card({
           size="2xs"
           fixedWidth
         />
-        <span>{Number(rating).toFixed(1)}</span>
-        <span>({reviewCount}) •</span>
+        <span>{Number(stats.rating).toFixed(1)}</span>
+        <span>({stats.reviewCount}) •</span>
         <span>{location}</span>
       </div>
       <p className="card-review">{title}</p>

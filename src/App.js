@@ -8,19 +8,7 @@ const { cardDetail } = dataSet;
 
 function App() {
   const cardElements = cardDetail.map((obj) => {
-    return (
-      <Card
-        img={obj.coverImg}
-        rating={obj.stats.rating}
-        reviewCount={obj.stats.reviewCount}
-        location={obj.location}
-        openSpots={obj.openSpots}
-        sold={obj.sold}
-        key={obj.id.toString()}
-        title={obj.title}
-        price={obj.price}
-      />
-    );
+    return <Card key={obj.id} item={obj} />;
   });
 
   return (
