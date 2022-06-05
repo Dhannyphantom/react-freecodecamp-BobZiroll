@@ -5,15 +5,22 @@ export default function Card({
   img,
   rating,
   reviewCount,
-  sold,
+  openSpots,
   title,
-  country,
+  location,
   price,
 }) {
+  let badgeText = null;
+  if (openSpots === 0) {
+    badgeText = "SOLD OUT";
+  } else if (location === "Online") {
+    badgeText = "ONLINE";
+  }
+
   return (
     <div className="card-container">
+      {badgeText && <div className="card-badge">{badgeText}</div>}
       <div className="card-image-container">
-        {/* <p>{sold ? "SOLD OUT" : "AVAILABLE"}</p> */}
         <img src={img} alt="" className="card-image" />
       </div>
       <div className="card-rating">
@@ -25,7 +32,7 @@ export default function Card({
         />
         <span>{Number(rating).toFixed(1)}</span>
         <span>({reviewCount}) •</span>
-        <span>{country}</span>
+        <span>{location}</span>
       </div>
       <p className="card-review">{title}</p>
       <p className="card-price">

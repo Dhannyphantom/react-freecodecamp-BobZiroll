@@ -13,7 +13,8 @@ function App() {
         img={obj.coverImg}
         rating={obj.stats.rating}
         reviewCount={obj.stats.reviewCount}
-        country={obj.location}
+        location={obj.location}
+        openSpots={obj.openSpots}
         sold={obj.sold}
         key={obj.id.toString()}
         title={obj.title}
