@@ -3,7 +3,7 @@ import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
 
 export default function DetailTitle() {
   return (
-    <div className="detail">
+    <div className="title">
       <div className="detail-header">
         <FontAwesomeIcon
           icon={solid("location-pin")}

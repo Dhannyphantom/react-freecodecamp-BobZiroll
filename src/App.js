@@ -1,14 +1,12 @@
 import "./App.css";
-import DetailInfo from "./components/DetailInfo";
-import DetailTitle from "./components/DetailTitle";
+import Detail from "./components/Detail";
 import NavBar from "./components/NavBar";
 
 function App() {
   return (
     <div className="container">
       <NavBar />
-      <DetailTitle />
-      <DetailInfo />
+      <Detail />
     </div>
   );
 }

@@ -28,7 +28,7 @@ body {
   color: #fff;
 }
 
-.detail {
+.title {
   margin-bottom: 30px;
 }
 
@@ -50,5 +50,19 @@ body {
 
 .info-description {
   font-size: 11px;
-  width: 75vw;
+  width: 500px;
+}
+
+.detail {
+  display: flex;
+  flex-direction: row;
+}
+
+.detail > img {
+  width: 200px;
+  border-radius: 8px;
+}
+
+.detail-info {
+  padding: 20px;
 }
