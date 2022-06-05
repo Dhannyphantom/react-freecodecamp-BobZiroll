@@ -28,6 +28,10 @@ body {
   color: #fff;
 }
 
+.detail {
+  margin-bottom: 30px;
+}
+
 .detail-header {
   display: flex;
   flex-direction: row;
@@ -36,4 +40,15 @@ body {
 
 .detail-link {
   color: gray;
+}
+
+.info-date {
+  font-size: 10px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.info-description {
+  font-size: 11px;
+  width: 75vw;
 }
