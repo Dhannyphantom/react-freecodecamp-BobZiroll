@@ -1,13 +1,17 @@
 import DetailTitle from "./DetailTitle";
 import DetailInfo from "./DetailInfo";
 
-export default function Detail() {
+export default function Detail({ item }) {
   return (
     <div className="detail">
-      <img src={require("../assets/itachi.jpg")} alt="" />
+      <img src={item.coverImg} alt="" />
       <div className="detail-info">
-        <DetailTitle />
-        <DetailInfo />
+        <DetailTitle name={item.name} show={item.show} />
+        <DetailInfo
+          startDate={item.startDate}
+          endDate={item.endDate}
+          description={item.description}
+        />
       </div>
     </div>
   );
