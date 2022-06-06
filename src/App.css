@@ -10,7 +10,7 @@
   height: 70px;
   color: #fff;
   padding: 15px;
-  background-color: purple;
+  background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
 }
 
 .nav > h2 {
