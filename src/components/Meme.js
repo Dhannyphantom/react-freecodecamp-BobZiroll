@@ -5,8 +5,16 @@ export default function Meme() {
   return (
     <form className="form">
       <div className="form-inputs">
-        <input placeholder="Enter header meme" className="form-input" />
-        <input placeholder="Enter footer meme" className="form-input" />
+        <input
+          placeholder="Enter header meme"
+          className="form-input"
+          type="text"
+        />
+        <input
+          placeholder="Enter footer meme"
+          className="form-input"
+          type="text"
+        />
       </div>
       <button className="form-btn">
         <span>Get a new meme image</span>

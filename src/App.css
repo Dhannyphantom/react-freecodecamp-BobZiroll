@@ -28,18 +28,18 @@
 
 .form-input {
   padding: 10px;
-  border-color: gray;
   margin: 0px 10px 20px 10px;
-  border-style: solid;
   border-radius: 5px;
+  border: 1px solid #d5d4d8;
 }
 
 .form-btn {
   background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
-  border-width: 0;
   color: #fff;
   width: 400px;
+  border: none;
   height: 40px;
+  cursor: pointer;
   border-radius: 7px;
 }
 
