@@ -17,3 +17,32 @@
   margin-right: auto;
   margin-left: 6px;
 }
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.form-input {
+  padding: 10px;
+  border-color: gray;
+  margin: 0px 10px 20px 10px;
+  border-style: solid;
+  border-radius: 5px;
+}
+
+.form-btn {
+  background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+  border-width: 0;
+  color: #fff;
+  width: 400px;
+  height: 40px;
+  border-radius: 7px;
+}
+
+.form-btn > span {
+  margin-right: 6px;
+}
