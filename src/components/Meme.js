@@ -1,7 +1,19 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
+import dataSet from "../api/dataSet";
+
+const {
+  memes: {
+    data: { memes },
+  },
+} = dataSet;
 
 export default function Meme() {
+  const handleBtnClick = (e) => {
+    e.preventDefault();
+    const randIndex = Math.floor(Math.random() * memes.length);
+    console.log(memes[randIndex].url);
+  };
   return (
     <form className="form">
       <div className="form-inputs">
@@ -16,7 +28,7 @@ export default function Meme() {
           type="text"
         />
       </div>
-      <button className="form-btn">
+      <button onClick={handleBtnClick} className="form-btn">
         <span>Get a new meme image</span>
         <FontAwesomeIcon icon={solid("thumbs-up")} />
       </button>
