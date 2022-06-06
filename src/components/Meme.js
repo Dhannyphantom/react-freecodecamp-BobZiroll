@@ -9,13 +9,16 @@ const {
 } = dataSet;
 
 export default function Meme() {
+  let url;
   const handleBtnClick = (e) => {
     e.preventDefault();
     const randIndex = Math.floor(Math.random() * memes.length);
-    console.log(memes[randIndex].url);
+    url = memes[randIndex].url;
+    console.log(url);
   };
   return (
     <form className="form">
+      <p> {url} </p>
       <div className="form-inputs">
         <input
           placeholder="Enter header meme"

@@ -3,6 +3,10 @@
   margin: 0;
 }
 
+body {
+  background-color: #672280;
+}
+
 .nav {
   display: flex;
   flex-direction: row;
@@ -45,4 +49,26 @@
 
 .form-btn > span {
   margin-right: 6px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+
+main > button {
+  border: 1px solid #fff;
+  background-color: transparent;
+  padding: 20px 60px;
+  border-radius: 40px;
+  color: white;
+  cursor: pointer;
+}
+
+main > button:hover {
+  background-color: white;
+  color: #672280;
+  border: none;
 }
