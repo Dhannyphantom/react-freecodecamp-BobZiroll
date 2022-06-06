@@ -75,7 +75,7 @@ const sets = {
       endDate: "7th August, 2021",
       description:
         "Qui in fugiat nulla fugiat et elit dolor anim irure consectetur. Laboris non est commodo Lorem sint minim do amet adipisicing reprehenderit in occaecat aute. Elit quis sint sunt laborum do Lorem occaecat cillum fugiat aliquip aute nisi labore. Dolore fugiat pariatur culpa tempor adipisicing ipsum reprehenderit pariatur nostrud pariatur dolore labore labore nulla. Anim eu officia laborum quis ullamco. Quis est labore fugiat veniam nisi. Mollit aliqua ullamco tempor duis commodo minim.",
-      coverImg: require("../assets/Pin2.jpeg"),
+      coverImg: require("../assets/pic.jpg"),
     },
     {
       id: 3,

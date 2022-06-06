@@ -3,70 +3,17 @@
   margin: 0;
 }
 
-body {
-  font-family: Poppins;
-}
-
 .nav {
-  background-color: #ff864e;
-  height: 60px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-  box-shadow: 0px 3px 5px #ccc;
-}
-
-.padding {
-  padding: 3px;
-  font-size: 12px;
+  height: 70px;
+  color: #fff;
+  padding: 15px;
+  background-color: purple;
 }
 
 .nav > h2 {
-  font-size: 16px;
-  margin-left: 8px;
-  color: #fff;
-}
-
-.title {
-  margin-bottom: 30px;
-}
-
-.detail-header {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.detail-link {
-  color: gray;
-}
-
-.info-date {
-  font-size: 10px;
-  font-weight: bold;
-  margin-bottom: 15px;
-}
-
-.info-description {
-  font-size: 11px;
-  width: 350px;
-}
-
-.detail {
-  display: flex;
-  padding: 30px;
-  flex-direction: row;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.detail > img {
-  width: 200px;
-  height: 250px;
-  border-radius: 8px;
-}
-
-.detail-info {
-  padding: 20px;
+  margin-right: auto;
+  margin-left: 6px;
 }
