@@ -3,10 +3,6 @@
   margin: 0;
 }
 
-body {
-  background-color: #672280;
-}
-
 .nav {
   display: flex;
   flex-direction: row;
@@ -51,24 +47,13 @@ body {
   margin-right: 6px;
 }
 
-main {
+.image-container {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  color: #fff;
+  justify-content: center;
+  margin-top: 20px;
 }
 
-main > button {
-  border: 1px solid #fff;
-  background-color: transparent;
-  padding: 20px 60px;
-  border-radius: 40px;
-  color: white;
-  cursor: pointer;
-}
-
-main > button:hover {
-  background-color: white;
-  color: #672280;
-  border: none;
+.meme-image {
+  max-width: 100%;
 }
