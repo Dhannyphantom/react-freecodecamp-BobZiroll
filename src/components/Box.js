@@ -1,15 +1,7 @@
-import { useState } from "react";
-
-export default function Box({ on, toggle: toggler }) {
-  const [toggle, setToggle] = useState(on);
+export default function Box({ on, id, toggle: toggler }) {
   const styles = {
-    backgroundColor: toggle ? "#222222" : "transparent",
+    backgroundColor: on ? "#222222" : "transparent",
   };
 
-  const handleClick = () => {
-    // setToggle((prevToggle) => !prevToggle);
-    toggler();
-  };
-
-  return <div onClick={handleClick} className="box" style={styles} />;
+  return <div onClick={() => toggler(id)} className="box" style={styles} />;
 }

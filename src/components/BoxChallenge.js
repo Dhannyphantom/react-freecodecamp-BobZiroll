@@ -7,11 +7,14 @@ const { boxes: boxesData } = dataSet;
 export default function BoxChallenge() {
   const [boxes, setBoxes] = useState(boxesData);
 
-  const toggle = () => {
-    console.log("clicked");
+  const toggle = (id) => {
+    const copy = [...boxes];
+    const index = copy.findIndex((obj) => obj.id === id);
+    copy[index].on = !copy[index].on;
+    setBoxes(copy);
   };
   const boxElements = boxes.map((obj) => (
-    <Box key={obj.id} toggle={toggle} on={obj.on} />
+    <Box key={obj.id} id={obj.id} toggle={toggle} on={obj.on} />
   ));
 
   return (
