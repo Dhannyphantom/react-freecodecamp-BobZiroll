@@ -1,7 +1,7 @@
-export default function Box({ on, id, toggle: toggler }) {
+export default function Box({ on, toggle: toggler }) {
   const styles = {
     backgroundColor: on ? "#222222" : "transparent",
   };
 
-  return <div onClick={() => toggler(id)} className="box" style={styles} />;
+  return <div onClick={toggler} className="box" style={styles} />;
 }
