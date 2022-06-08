@@ -5,7 +5,7 @@ export default function FormChallenge() {
     email: "",
     password: "",
     confirmPassword: "",
-    newsletter: false,
+    newsletter: true,
   });
 
   const handleChange = (event) => {
