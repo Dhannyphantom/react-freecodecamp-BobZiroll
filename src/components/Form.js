@@ -5,9 +5,8 @@ export default function Form() {
     firstName: "",
     lastName: "",
     email: "",
+    comment: "",
   });
-
-  console.log(formData);
 
   const onFormChange = (event) => {
     setFormData((prevForm) => {
@@ -25,17 +24,25 @@ export default function Form() {
         name="firstName"
         placeholder="First Name"
         onChange={onFormChange}
+        value={formData.firstName}
       />
       <input
         type="text"
         name="lastName"
         placeholder="Last Name"
         onChange={onFormChange}
+        value={formData.lastName}
       />
       <input
         type="email"
         name="email"
         placeholder="Email"
+        onChange={onFormChange}
+        value={formData.email}
+      />
+      <textarea
+        value={formData.comment}
+        name="comment"
         onChange={onFormChange}
       />
     </form>
