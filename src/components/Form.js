@@ -6,6 +6,7 @@ export default function Form() {
     lastName: "",
     email: "",
     isMarried: false,
+    employment: "",
     comment: "",
   });
 
@@ -57,6 +58,43 @@ export default function Form() {
         />
         <label htmlFor="isMarried">Are you married ?</label>
       </span>
+      <fieldset>
+        <legend>Current employment status</legend>
+
+        <span>
+          <input
+            type="radio"
+            id="employed"
+            checked={formData.employment === "employed"}
+            name="employment"
+            value="employed"
+            onChange={onFormChange}
+          />
+          <label htmlFor="employed"> Employed </label>
+        </span>
+        <span>
+          <input
+            type="radio"
+            id="part-time"
+            checked={formData.employment === "part-time"}
+            name="employment"
+            value="part-time"
+            onChange={onFormChange}
+          />
+          <label htmlFor="part-time"> Part-time </label>
+        </span>
+        <span>
+          <input
+            type="radio"
+            id="unemployed"
+            value="unemployed"
+            checked={formData.employment === "unemployed"}
+            name="employment"
+            onChange={onFormChange}
+          />
+          <label htmlFor="unemployed"> Unemployed </label>
+        </span>
+      </fieldset>
     </form>
   );
 }
