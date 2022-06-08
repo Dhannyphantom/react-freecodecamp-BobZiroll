@@ -1,5 +1,5 @@
 import "./App.css";
-import Form from "./components/Form";
+import FormChallenge from "./components/FormChallenge";
 // import Meme from "./components/Meme";
 // import NavBar from "./components/NavBar";
 
@@ -8,7 +8,7 @@ function App() {
     <div className="container">
       {/* <NavBar />
       <Meme /> */}
-      <Form />
+      <FormChallenge />
     </div>
   );
 }
