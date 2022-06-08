@@ -1,12 +1,14 @@
 import "./App.css";
-import Meme from "./components/Meme";
+import Main from "./components/Main";
 import NavBar from "./components/NavBar";
+import Switch from "./components/res/Switch";
 
 function App() {
   return (
-    <div className="container">
-      <NavBar />
-      <Meme />
+    <div className="App">
+      {/* <NavBar />
+      <Main /> */}
+      <Switch />
     </div>
   );
 }
