@@ -1,11 +1,9 @@
-import { useState } from "react";
 import "./Switch.css";
 
-export default function Switch({}) {
-  const [checked, setChecked] = useState(false);
-
+export default function Switch({ checked, setChecked, handler }) {
   const handleSwitch = () => {
-    setChecked((prev) => !prev);
+    setChecked && setChecked((prev) => !prev);
+    handler && handler();
   };
 
   return (
