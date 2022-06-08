@@ -5,14 +5,16 @@ export default function Form() {
     firstName: "",
     lastName: "",
     email: "",
+    isMarried: false,
     comment: "",
   });
 
   const onFormChange = (event) => {
+    const { name, value, type, checked } = event.target;
     setFormData((prevForm) => {
       return {
         ...prevForm,
-        [event.target.name]: event.target.value,
+        [name]: type === "checkbox" ? checked : value,
       };
     });
   };
@@ -45,6 +47,16 @@ export default function Form() {
         name="comment"
         onChange={onFormChange}
       />
+      <span>
+        <input
+          type="checkbox"
+          name="isMarried"
+          onChange={onFormChange}
+          checked={formData.isMarried}
+          id="isMarried"
+        />
+        <label htmlFor="isMarried">Are you married ?</label>
+      </span>
     </form>
   );
 }
