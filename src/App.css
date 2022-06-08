@@ -49,7 +49,9 @@
 
 .image-container {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  position: relative;
   justify-content: center;
   margin-top: 20px;
 }
@@ -65,4 +67,16 @@
   margin: 4px;
   display: inline-block;
   border-radius: 5px;
+}
+
+.meme-text {
+  position: absolute;
+}
+
+.top {
+  top: 12px;
+}
+
+.bottom {
+  top: 170px;
 }
