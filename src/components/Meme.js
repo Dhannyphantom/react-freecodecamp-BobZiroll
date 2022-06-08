@@ -1,15 +1,11 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
-import dataSet from "../api/dataSet";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
-const {
-  memes: {
-    data: { memes },
-  },
-} = dataSet;
+const memeUri = "https://api.imgflip.com/get_memes";
 
 export default function Meme() {
+  const [allMemes, setAllMemes] = useState([]);
   const [meme, setMeme] = useState({
     topText: "",
     bottomText: "",
@@ -18,14 +14,16 @@ export default function Meme() {
 
   const handleBtnClick = (e) => {
     e.preventDefault();
-    const randIndex = Math.floor(Math.random() * memes.length);
+    const randIndex = Math.floor(Math.random() * allMemes.length);
     setMeme((prevMeme) => {
       return {
         ...prevMeme,
-        randomImage: memes[randIndex].url,
+        randomImage: allMemes[randIndex].url,
       };
     });
   };
+
+  console.log(allMemes);
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -36,6 +34,12 @@ export default function Meme() {
       };
     });
   };
+
+  useEffect(() => {
+    fetch(memeUri)
+      .then((res) => res.json())
+      .then((data) => setAllMemes(data.data.memes));
+  }, []);
 
   return (
     <main>

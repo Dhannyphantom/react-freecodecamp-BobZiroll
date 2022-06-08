@@ -71,6 +71,12 @@
 
 .meme-text {
   position: absolute;
+  width: 420px;
+  text-align: center;
+  font-size: 2.2rem;
+  color: #fff;
+  -webkit-text-stroke-width: 2.1px;
+  -webkit-text-stroke-color: black;
 }
 
 .top {
@@ -78,5 +84,5 @@
 }
 
 .bottom {
-  top: 170px;
+  top: 300px;
 }
