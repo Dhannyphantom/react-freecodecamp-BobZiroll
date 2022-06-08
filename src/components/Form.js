@@ -7,6 +7,7 @@ export default function Form() {
     email: "",
     isMarried: false,
     employment: "",
+    favColor: "",
     comment: "",
   });
 
@@ -19,6 +20,8 @@ export default function Form() {
       };
     });
   };
+
+  console.log(formData.favColor);
 
   return (
     <form>
@@ -95,6 +98,20 @@ export default function Form() {
           <label htmlFor="unemployed"> Unemployed </label>
         </span>
       </fieldset>
+      <label htmlFor="favColor">Pick your favorite color</label>
+      <select
+        id="favColor"
+        value={formData.favColor}
+        onChange={onFormChange}
+        name="favColor"
+      >
+        <option value="">-- Choose -- </option>
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="yellow">Yello</option>
+        <option value="pink">Pink</option>
+        <option value="orange">Orange</option>
+      </select>
     </form>
   );
 }
