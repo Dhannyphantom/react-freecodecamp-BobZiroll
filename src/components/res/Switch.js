@@ -1,14 +1,13 @@
 import "./Switch.css";
 
-export default function Switch({ checked, setChecked, handler }) {
-  const handleSwitch = () => {
-    setChecked && setChecked((prev) => !prev);
-    handler && handler();
-  };
-
+export default function Switch({ checked, setter }) {
   return (
     <label class="switch">
-      <input type="checkbox" checked={checked} onChange={handleSwitch} />
+      <input
+        type="checkbox"
+        checked={checked}
+        onChange={() => setter && setter()}
+      />
       <span class="slider round"></span>
     </label>
   );
